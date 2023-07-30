@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="/games/blockCheck.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="main.css">
+    <script src="/homepage.js"></script>
+    <style>
+        img:hover {
+            cursor: pointer;
+        }
+		* {
+			overflow-y: auto;
+		}
+    </style>
+    <script>
+        function showAlertForWIP(event, gameUrl) {
+          if (event.target.classList.contains('block')) {
+            event.preventDefault();
+            Swal.fire({
+              icon: 'error',
+              title: 'Oops...',
+              text: 'This game cannot be run at the moment. Please try again later.',
+            });
+          } else {
+            parent.link(gameUrl);
+          }
+        }
+
+    </script>
+</head>
+<body>
+	<h1 style="color: azure;cursor:default;" id="SGNI">Hello, from Noah.</h1>
+	<h3 style="font-family: Verdana, Geneva, Tahoma, sans-serif;color:rgb(238, 120, 24);">Cat games... "Oh, hi there, meow, meow meow" - Cam-Cakes.</h3>
+	<div class="image-grid">
+		<script>
+			const header = 'https:' + escape('//')
+		</script>
+		<img src="thumb/Sub.webp" alt="Sub Game Thumbnail" class="WIP" onclick="showAlertForWIP(event, '/games/player.html?game=sub')">
+		<img src="thumb/BloonsTD.webp" alt="Bloons Tower Defense Thumbnail" class="WIP" onclick="showAlertForWIP(event, '/games/player.html?game=scratch_bloons')">
+		<img src="thumb/facto.webp" alt="Factorio Game Thumbnail" class="WIP" onclick="showAlertForWIP(event, '/games/player.html?game=3d/fact')">
+		<img src="thumb/beeber.webp" alt="Beeber Game Thumbnail" class="WIP" onclick="showAlertForWIP(event, '/games/player.html?game=heavy/beeber')">
+		<img src="thumb/p1.png" alt="Infernal Platformer Thumbnail" class="WIP" onclick="showAlertForWIP(event, '/games/player.html?game=mcs/1/infernal_platformer')">
+		<img src="thumb/whopper.svg" alt="Whopper Clicker Thumbnail" class="WIP" onclick="showAlertForWIP(event, '/games/player.html?game=mcs/c1/whopper_clicker')">
+		<img src="thumb/scratch_station.png" alt="Scratch Station Thumbnail" class="WIP" onclick="showAlertForWIP(event, '/games/player.html?game=heavy/ss_psfs')">
+		<img src="thumb/giread1.png" alt="Giread Game Thumbnail" class="WIP" onclick="showAlertForWIP(event, '/games/player.html?game=s0')">
+		<img src="thumb/merge.png" alt="Merge Game Thumbnail" class="WIP" onclick="showAlertForWIP(event, '/games/player.html?game=merged')">
+		<img src="thumb/poke.svg" alt="Poke Game Thumbnail" class="WIP" onclick="showAlertForWIP(event, '/games/player.html?game=heavy/poke')">
+		<img src="thumb/musicelec.png" alt="Music Electrifier Thumbnail" class="WIP" onclick="showAlertForWIP(event, '/games/player.html?game=heavy/Music')">
+		<img src="thumb/ter103.png" alt="Terraria Game Thumbnail" class="WIP" onclick="showAlertForWIP(event, '/games/player.html?game=heavy/terr')">
+		<img src="thumb/geom.png" alt="Geometry Dash Thumbnail" class="WIP" onclick="showAlertForWIP(event, '/games/player.html?game=heavy/geom')">
+		<img src="thumb/duck1.png" alt="Duck Life Game Thumbnail" class="WIP" onclick="showAlertForWIP(event, '/games/player.html?game=heavy/ducklife')">
+		<img src="thumb/dbthumb.png" alt="DB Game Thumbnail" class="WIP" onclick="showAlertForWIP(event, '/games/player.html?game=s1')">
+		<img src="thumb/strn.png" alt="Sticky Run Game Thumbnail" class="WIP" onclick="showAlertForWIP(event, '/games/player.html?game=stickyrun')">
+		<img src="https://jpg.hoodamath.com/large/gettingoverit_300x225.jpg" alt="Sticky Run Game Thumbnail" class="WIP" onclick="showAlertForWIP(event, '/games/player.html?game=s2')">
+		<img src="thumb/sscratch.png" alt="Sticky Run Game Thumbnail" class="WIP" onclick="showAlertForWIP(event, '/games/player.html?game=s3')">
+		<img src="thumb/slope.jpg" alt="Sticky Run Game Thumbnail" class="WIP" onclick="showAlertForWIP(event, '/games/player.html?game=slope')">
+		<img src="thumb/binded.png" alt="Sticky Run Game Thumbnail" class="WIP" onclick="showAlertForWIP(event, '/games/player.html?game=mcs/1/binbou')">
+		<img src="thumb/gms.png" alt="Sticky Run Game Thumbnail" class="WIP" onclick="showAlertForWIP(event, '/games/player.html?game=s4')">
+		<img src="thumb/ducklife4.png" alt="Sticky Run Game Thumbnail" class="WIP" onclick="showAlertForWIP(event, '/games/player.html?game=s5')">
+		<img src="thumb/Rop.png" alt="Sticky Run Game Thumbnail" class="WIP" onclick="showAlertForWIP(event, '/games/player.html?game=heavy/RoP')">
+		<img src="thumb/ducklife6.png" alt="Sticky Run Game Thumbnail" class="WIP" onclick="showAlertForWIP(event, '/games/player.html?game=s7')">
+		<img src="https://th.bing.com/th/id/OIP.Cea44-qasRuys9oy51-ijgHaFT?pid=ImgDet&rs=1" alt="Sticky Run Game Thumbnail" class="WIP" onclick="showAlertForWIP(event, '/games/player.html?game=heavy/cookc')">
+	</div>
+	<style>
+		#SGNI {
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+		}
+		/* width */
+::-webkit-scrollbar {
+width: 30px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #010211;; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	cursor: pointer;
+background: #1e13ee; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	cursor: pointer;
+background: #8800ff; 
+}
+	</style>
+	
+	<div style="height: 200px;"></div>
+	<h3 style="font-family: Verdana, Geneva, Tahoma, sans-serif;color:aliceblue;">Games to add : None, please suggest games.</h3>
+	<h1 id="SGNI" style="font-size:small; color:#1b1d36; cursor:pointer;" onclick="parent.link('/about')">A Noah018 Project</h1>
+	<div style="height: 25px;"></div>
+</body>
+</html>

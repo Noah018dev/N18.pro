@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+    <link rel="stylesheet" href="/basic.css">
+    
+</head>
+<body>
+    <style>
+        img {
+            left: 25%;
+        }
+    </style>
+    <img src="/WebImg/0.jpg" id="img">
+    <script>
+    i = 0
+    setInterval(function() {
+        i = i + 1
+        if (i >= 19) {
+            i = 0
+        }
+        document.getElementById("img").src = "/WebImg/" + i + '.jpg';
+    }, 2000);</script>
+    <script src="homepage.js"></script>
+</body>
+</html>

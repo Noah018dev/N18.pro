@@ -1,0 +1,42 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #c1c0c0;
+}
+p {
+    color: #c6c8e4;
+}
+
+a {
+    color: #898ed8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.clickable:hover {
+    cursor: pointer;
+}
+
+body {
+    background: #010211;
+    color:#010211 ;
+    margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  overflow: hidden;
+}
+
+footer {
+    position: fixed;
+    bottom: 2%;
+    z-index: 999;
+    background-color: midnightblue;
+    width: 100%;
+}

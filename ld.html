@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/contextmenu.css">
+        <link rel="stylesheet" href="/basic.css">
+  <script src="/contextmenu.js"></script>
+    </head>
+    <body>
+        <style>
+            html {
+                background-color: darkgray;
+            }
+        </style>
+        <noscript>
+            <style>#njs {
+                height: 100vh;
+  width: 100vw;
+  background-color: rgb(0, 0, 0);
+  background-image: linear-gradient(rgb(0, 0, 0), rgb(10, 3, 36));
+  overflow:hidden;}
+  #root {
+    display:none;
+  }
+                
+            </style>
+            
+            <div id="njs"><embed src="/noscript.html" width="100%" height="100%"></embed></div></noscript>
+        <div id="root" style="background-color:darkgray"><h1 style="font-size: xx-large;">Please wait, we are loading this page as fast as we can!</h1>
+            <div>
+                <h1 style="font-size:large;">But you can play a game while you wait!</h1>
+            </div>
+            <iframe src="/PONG.html" width="599" height="516" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
+            <h1 style="font-size: medium;">It looks like we are <a onclick="window.location = '/face.html'" style="cursor: pointer;">done loading</a>, but you can keep playing if you'd like!</h1></div>
+    </body>
+    <style>
+        h1 {
+            font-family:Arial, Helvetica, sans-serif;
+            margin-left: 20px;
+            cursor: default;
+        }
+        a {
+            color: cadetblue;
+        }
+    </style>
+</html>

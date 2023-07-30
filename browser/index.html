@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .context-menu {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        padding: 12px 16px;
+        background-color: #f1f1f1;
+        list-style-type: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="loading-overlay" style="cursor: none;">
+      <embed src="/loadingfiles" width="100%" height="100%" id="root">
+      <style>
+        #loading-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+      cursor: none;
+    }
+      </style>
+      <script>
+        window.addEventListener("load", function () {
+      setTimeout(function () {
+        document.getElementById("root").src = '/browser/browser';
+        document.title = 'File browser';
+      }, 2000);
+    });
+    
+      </script>
+
+    <div id="contextMenu" class="context-menu">
+      <ul>
+        <li><a onclick="refreshPage()">Refresh</a></li>
+      </ul>
+    </div>
+
+    <script type="text/javascript">
+      document.oncontextmenu = rightClick;
+      function rightClick(clickEvent) {
+        clickEvent.preventDefault();
+        var contextMenu = document.getElementById("contextMenu");
+        contextMenu.style.display = "block";
+        contextMenu.style.left = clickEvent.clientX + "px";
+        contextMenu.style.top = clickEvent.clientY + "px";
+      }
+      window.onclick = function() {
+        document.getElementById("contextMenu").style.display = "none";
+      };
+      function refreshPage() {
+        location.reload();
+      }
+    </script>
+  </body>
+</html>
